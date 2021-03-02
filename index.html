@@ -10,83 +10,107 @@
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
     crossorigin="anonymous"
   />
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/logo_letter.png" />
   </head>
-  <body>
-    <nav>
-        <div class="logo">
+  <body> 
+    <nav class="navbar">
+        
+      <div class="logo">
           <a href="index.html">
             <img src="images/logo_main.png" alt="logo">
           </a>
         </div>
 
         <ul class="nav-items">
-          <li><a href="#">Work</a></li>
-          <li><a href="#">About</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+        
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+       </div>
+       
     </nav>
 
     <main role="main" id="homepage">
+
+      <div class="social-icons" data-aos="fade-up" data-aos-duration="1000">
+        <a href="https://www.instagram.com/yoonthecoder/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/imyoonkim/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/yoonthecoder"><i class="fab fa-github"></i></a>
+      <div class="v-line"></div>
+      </div>
+     
       <section class="header">
         <div class="header-content">
-          <h1>Hi, I'm <span class="underline">Yoon Kim.</span></h1>
+          <h1 data-aos="fade-right">Hi, I'm <span class="underline">Yoon Kim.</span></h1>
           <h1 class="transparent-text typewriter">I Design & Code .</h1>
           <div class="btn-wrapper">
-            <button type="button" class="header-btn btn">Learn More</button>
+            <a href="about.html"><button type="button" class="header-btn btn"><span>Learn More</span></button></a>
           </div>
         </div>
       </section>
 
       <section class="featured">
-        <div class="featured-title">
+        <div class="featured-title" data-aos="fade-up" data-aos-duration="1000">
           <h1>Featured Work</h1>
         </div>
         <div class="featured-container">
-          <div class="featured-work work1">
+          <div class="featured-work work1" data-aos="flip-left" data-aos-duration="1000">
               <div class="work-img">
                 <img src="images/seed_mockup.jpg" alt="seed_thumbnail">
               </div>
               <div class="work-info">
                 <p>Front-End Development</p>
                 <h1>SEED WordPress Website</h1>
-                <button type="button" class="btn">View Project</button>
+                <a href="seed.html"><button type="button" class="btn"><span>View Project</span></a> 
               </div>
           </div>
-          <div class="featured-work work2">
-            <div class="work-info">
-              <p>Front-End Development</p>
-              <h1>SEED WordPress Website</h1>
-              <button type="button" class="btn">View Project</button>
-            </div>
-            <div class="work-img">
-              <img src="images/seed_mockup.jpg" alt="seed_thumbnail">
-            </div>
-        </div>
-        <div class="featured-work work3">
+        <div class="featured-work work2" data-aos="flip-left" data-aos-duration="1000">
           <div class="work-img">
-            <img src="images/fcc_thumbnail.png" alt="seed_thumbnail">
+            <img src="images/fcc_thumbnail.png" alt="fcc_thumbnail">
           </div>
           <div class="work-info">
             <p>UX / UI Design</p>
             <h1>freeCodeCamp Case Study</h1>
-            <button type="button" class="btn">View Project</button>
+            <a href="freecodecamp.html"><button type="button" class="btn"><span>View Project</span></a>
           </div>
-      </div>
+        </div>
+        <div class="featured-work work3" data-aos="flip-right" data-aos-duration="1000">
+          <div class="work-img">
+            <img src="images/wtc_thumbnail.jpg" alt="wtc_thumbnail">
+          </div>
+          <div class="work-info">
+            <p>Front-End Development</p>
+            <h1>What The Craft Website</h1>
+            <a href="whatthecraft.html"><button type="button" class="btn"><span>View Project</span></a>
+          </div>
+        </div>
         </div>    
       </section>
+    
     </main>
+
+
     <footer class="footer">
-      <div class="footer-content">
+      <div class="footer-content" data-aos="fade-up" data-aos-duration="1000">
         <h1>Let's Connect!</h1>
-        <p> If you're interested in working with me, feel free to reach out to me at <span class="highlight">imyoonkim@gmail.com</span>
+        <p> If you're interested in working with me, feel free to reach out to me at</p> <span class="highlight">imyoonkim@gmail.com</span>
         <ul class="footer-links">
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/yoonthecoder/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/imyoonkim/"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/yoonthecoder"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
-     
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
