@@ -394,12 +394,15 @@ button {
   width: 600px;
 }
 
-.work-container {
+section.work-list.container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 4rem 10rem;
-  margin-bottom: 2rem;
+}
+
+.work-grid {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .filter-tab {
@@ -423,6 +426,7 @@ button {
   font-weight: 500;
   font-family: 'Montserrat',sans-serif;
   margin: 0 0.5rem;
+  border-radius: 20px;
 }
 
 .filter-btn:hover {
@@ -441,9 +445,9 @@ button {
 .filter-div {
   width: 450px;
   height: 320px;
-  margin: 1rem;
   position: relative;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .work-overlay {
@@ -589,6 +593,15 @@ button {
 
 .wtc-thumb {
   background-image: url('../images/wtc_thumbnail.jpg');
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chibi-thumb {
+  background-image: url('../images/chibis.jpg');
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -846,7 +859,7 @@ button {
     position: absolute;
     right: 0px;
     height: 100vh;
-    background-color: var(--primary-color);
+    background-color: #fff;
     top: 84px;
     display: flex;
     flex-direction: column;
@@ -868,13 +881,14 @@ button {
     color: var(--orange-color);
   }
 
-.nav-items a.active {
-  color: var(--grey-color);
-}
+  .nav-items a.active {
+    color: var(--grey-color);
+  }
 
-.nav-items a.active:hover {
-  color: var(--orange-color);
-}
+  .nav-items a.active:hover {
+    color: var(--orange-color);
+  }
+
 /* 
   .nav-items li a {
     color: white;
@@ -923,10 +937,6 @@ button {
     font-size: 1.4rem;
   }
 
-  .work-container {
-    padding: 4rem 6.5rem;
-    margin-bottom: 2rem;
-  }
 
   .filter-btn {
     width: 190px;
@@ -963,12 +973,6 @@ button {
 }
 
 @media screen and (max-width: 700px){
-
-  .work-container {
-    padding: 4rem 6rem;
-    margin-bottom: 2rem;
-  }
-
 
   .filter-div {
     width: 450px;
@@ -1033,6 +1037,7 @@ button {
   .work-intro {
     width: 700px;
   }
+
   .work-list {
     width: 700px;
   }
@@ -1048,6 +1053,7 @@ button {
   .project-detail {
     width: 700px;
   }
+
 }
 
 @media screen and (max-width: 500px){
@@ -1055,12 +1061,9 @@ button {
    width: 500px;
  }
 
-
  .featured {
   width: 500px;
 }
 
-.footer {
-  width: 500px;
-}
+
 }
