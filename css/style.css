@@ -394,9 +394,10 @@ button {
   width: 600px;
 }
 
-section.work-list.container {
+section.work-list {
   display: flex;
   justify-content: center;
+  padding: 0 100px;
 }
 
 .work-grid {
@@ -852,12 +853,6 @@ section.work-list.container {
     width: 200px;
   }
 
-  .filter-div {
-    width: 400px;
-    height: 300px;
-    margin: 1rem;
-  }
-
   .info-detail {
     width: 230px;
   }
@@ -950,20 +945,14 @@ section.work-list.container {
     width: 190px;
   }
 
-  .filter-div {
-    width: 500px;
-    height: 400px;
-    margin: 1rem;
-  }
-
   
 }
 
 @media screen and (max-width: 750px){
 
   .filter-div {
-    width: 480px;
-    height: 350px;
+    width: 450px;
+    height: 320px;
     margin: 1rem;
   }
 
@@ -982,17 +971,15 @@ section.work-list.container {
 
 @media screen and (max-width: 700px){
 
-  .filter-div {
-    width: 450px;
-    height: 320px;
-    margin: 1rem;
-  }
 
   .filter-btn {
+    width: 150px;
+  }
+
+  section.work-list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 150px;
+    padding: 0 70px;
   }
 }
 
@@ -1031,29 +1018,7 @@ section.work-list.container {
     font-size: 0.8rem;
   }
   
-  .filter-tab {
-    width: 700px;
-  }
 
-  .work-intro {
-    width: 700px;
-  }
-
-  .work-list {
-    width: 700px;
-  }
-
-  .project-info {
-    width: 700px;  
-  }
-
-  .project-thumb {
-    width: 700px;
-  }
-
-  .project-detail {
-    width: 700px;
-  }
 
 }
 
@@ -1077,7 +1042,38 @@ section.work-list.container {
   .featured .featured-title h1 {
     font-size: 2rem;
 }
+  .filter-btn {
+    width: 120px;
+  }
 
+  section.work-list {
+    padding: 0 12px;
+  }
+
+.filter-div {
+  width: 350px;
+  height: auto;
+}
+
+.work-overlay {
+  width: 325px;
+  height: auto;
+}
+.overlay-title {
+  font-size: 1.5rem;
+}
+
+.overlay-tools {
+  font-size: 0.6rem;
+  color: #fff;
+}
+}
+
+@media screen and (max-width: 400px){
+  .filter-btn {
+    width: 90px;
+    font-size: 0.7em;
+  }
 
 }
 
@@ -1103,12 +1099,12 @@ section.work-list.container {
   }
 
   .featured-work .work-info {
-    padding: 20px 15px;
+    padding: 0px 15px;
   }
 
   .featured-work .work-img {
-    width: 220px;
-    height: 220px;
+    width: auto;
+    height: auto;
   }
 
   .featured-work .work-img img {
@@ -1117,4 +1113,22 @@ section.work-list.container {
     object-fit: cover;
   }
 
+  .filter-btn {
+    width: 80px;
+    font-size: 0.7em;
+  }
+
+  section.work-list {
+    padding: 0 5px;
+  }
+
+  .filter-div {
+    width: 310px;
+    height: auto;
+  }
+  
+  .work-overlay {
+    width: 325px;
+    height: auto;
+  }
 }
