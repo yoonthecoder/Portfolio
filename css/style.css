@@ -571,9 +571,13 @@ section.work-list {
   display: flex;
   flex-direction: column;
 }
+
 .project-detail {
   padding-bottom: 3rem;
 }
+
+
+
 .seed-thumb {
   background-image: url('../images/seed_mockup.jpg');
   min-height: 600px;
@@ -641,7 +645,7 @@ section.work-list {
 
 .phase-content {
   max-width: 500px;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
 }
 
 .phase-content h1 {
@@ -813,6 +817,20 @@ section.work-list {
   .phase-content {
     margin-top: 3rem;
   }
+
+  .project-info {
+    padding: 10rem 7rem 6rem 7rem;
+  }
+
+  .phase {
+    padding: 5rem 5rem 3rem 5rem;
+    justify-content: center;
+  }
+
+  .phase-content {
+    padding: 0rem;
+  }
+
 }
 
 @media screen and (max-width: 900px){
