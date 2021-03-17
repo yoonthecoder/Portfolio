@@ -623,10 +623,31 @@ section.work-list {
   background-size: cover;
 }
 
+.balance-thumb {
+  background-image: url('../images/balance_mockup.png');
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.royallepage-thumb {
+  background-image: url('../images/royallepage_thumb.jpg');
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .phase {
   display: flex;
   padding: 5rem 7rem 3rem 7rem;
   justify-content: center;
+}
+.single-row {
+  padding: 0 10rem;
 }
 
 .phase-img {
@@ -643,12 +664,16 @@ section.work-list {
   transform: scale(1.15);
 }
 
+.phase-img img:hover {
+  transform: scale(1.15);
+}
+
 .phase-content {
   max-width: 500px;
   /* padding: 0 3rem; */
 }
 
-.phase-content h1 {
+.phase h1 {
   margin-bottom: 2.5rem;
 }
 
