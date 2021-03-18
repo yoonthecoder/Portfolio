@@ -570,6 +570,7 @@ section.work-list {
 .info-detail {
   display: flex;
   flex-direction: column;
+  margin-top: 3rem
 }
 
 .project-detail {
@@ -683,11 +684,11 @@ section.work-list {
   font-weight: 700;
 }
 
-.fcc-final-img {
+.final-img {
   width: 1000px;
 }
 
-.fcc-final-img img {
+.final-img img {
   width: 100%;
 }
 
@@ -898,6 +899,7 @@ section.work-list {
 
   .info-detail {
     width: 230px;
+
   }
 }
 
