@@ -33,30 +33,17 @@ $('.filter-btn').click(function(){
 
 
 // Mobile Menu 
-  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav-items');
-  // const navLinks = document.querySelectorAll('.nav-items li');
 
-  hamburger.addEventListener('click', () => {
-    console.log("I got clicked!");
-    console.log(nav);
+
+  menu.addEventListener('click', () => {
     // nav.style.transform = "translateX(0%)";
     nav.classList.toggle('nav-active');
     
   });
 
-
-
-// function filterWork(filter) {
-//   var elements = document.getElementsByClassName("filter-div");
-//   console.log(elements);
-//   if (filter === "all") {
-//     filter = "";
-//   }
-//   for (i = 0; i < elements.length; i++) {
-//     elements[i].classList.add ="filter-show";
-//     console.log(elements[i].classList);
-//   }
-// };
-
-// filterWork("all");
+// Transforming to close btn
+  $(".hamburger").click(function(){
+    $(".hamburger").toggleClass("close");
+  });
