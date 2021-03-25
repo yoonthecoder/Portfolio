@@ -213,6 +213,9 @@ nav .logo img {
   border-radius: 10px;
   background-color: var(--black-color);
   transition: all cubic-bezier(0.25, 0.1, 0.25, 1.55) 0.5s;
+  -moz-transition: all cubic-bezier(0.25, 0.1, 0.25, 1.55) 0.5s;
+  -webkit-transition: all cubic-bezier(0.25, 0.1, 0.25, 1.55) 0.5s;
+  -ms-transition: all cubic-bezier(0.25, 0.1, 0.25, 1.55) 0.5s;
 }
 
 .line1 {
@@ -427,10 +430,12 @@ section.work-list {
 
 .work-grid {
   margin: 5rem 0;
-  display: flex;
-  justify-content: center;
 }
 
+.fluid-wrapper {
+  display: flex;
+  justify-content:center;
+}
 .filter-tab {
   display: flex;
   justify-content: center;
@@ -667,6 +672,15 @@ section.work-list {
   background-size: cover;
 }
 
+.noteapp-thumb {
+  background-image: url('../images/noteapp_mockup.png');
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .phase {
   display: flex;
   padding: 5rem 7rem 3rem 7rem;
@@ -747,6 +761,10 @@ section.work-list {
 }
 
 .about-me {
+  background-image: url('../images/about_bg1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 3rem 10rem;
   display: flex;
   justify-content: center;
@@ -766,6 +784,20 @@ section.work-list {
   font-weight: 400;
 }
 
+.about-links{
+  display: flex;
+  list-style: none;
+  margin: 1.4rem 0;
+}
+
+.about-links li i{
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 0.6rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+
 .about-img {
   max-width: 520px;
 }
@@ -773,6 +805,10 @@ section.work-list {
 .about-img img {
   width: 100%;
   border-radius: 20px;
+}
+
+.about-skills {
+
 }
 /* End of About Page */
 /* Footer */
@@ -1058,6 +1094,10 @@ section.work-list {
 
 @media screen and (max-width: 600px){
   
+  .project-info {
+    padding: 10rem 4rem 6rem 4rem;
+  }
+
   .header h1 {
     font-size: 3rem;
   }
@@ -1085,6 +1125,14 @@ section.work-list {
   .featured-work .work-info {
     width: 100%;
     height: 100%;
+  }
+
+
+  .phase {
+    padding: 5rem 4rem 3rem 4rem;
+  }
+  .phase-img {
+    padding: 0rem;
   }
 
   .footer p {
@@ -1148,6 +1196,10 @@ section.work-list {
     font-size: 0.7em;
   }
 
+  .project-title h1 {
+    font-size: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 350px){
@@ -1204,4 +1256,6 @@ section.work-list {
     width: 325px;
     height: auto;
   }
+
+ 
 }
