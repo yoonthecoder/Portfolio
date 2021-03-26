@@ -137,7 +137,6 @@ a {
   white-space: nowrap;
   border-right: 5px solid var(--primary-color);
   box-sizing: border-box;
-
 }
 
 @keyframes typewriter {
@@ -740,7 +739,7 @@ section.work-list {
 
 /* About Page */
 .about-intro {
-  padding: 10rem 10rem 5rem 10rem;
+  padding: 10rem 10rem 0rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -763,8 +762,8 @@ section.work-list {
 .about-me {
   background-image: url('../images/about_bg1.png');
   background-position: center;
+  background-size: auto;
   background-repeat: no-repeat;
-  background-size: cover;
   padding: 3rem 10rem;
   display: flex;
   justify-content: center;
@@ -773,9 +772,11 @@ section.work-list {
 
 .about-text {
   max-width: 550px;
+  margin-right: 6rem;
 }
+
 .about-text h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
@@ -799,7 +800,7 @@ section.work-list {
 }
 
 .about-img {
-  max-width: 520px;
+  max-width: 500px;
 }
 
 .about-img img {
@@ -807,9 +808,7 @@ section.work-list {
   border-radius: 20px;
 }
 
-.about-skills {
 
-}
 /* End of About Page */
 /* Footer */
 .footer {
@@ -919,6 +918,14 @@ section.work-list {
     padding: 0rem;
   }
 
+  .about-me {
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .about-text {
+    margin: 0;
+  }
+
 }
 
 @media screen and (max-width: 900px){
@@ -961,8 +968,8 @@ section.work-list {
 
   .info-detail {
     width: 230px;
-
   }
+  
 }
 
 
@@ -1090,6 +1097,14 @@ section.work-list {
     justify-content: center;
     padding: 0 70px;
   }
+
+  .about-text {
+    max-width: 400px;
+  }
+
+  .about-img {
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: 600px){
@@ -1188,6 +1203,14 @@ section.work-list {
   font-size: 0.6rem;
   color: #fff;
 }
+
+.about-text {
+  max-width: 300px;
+}
+
+.about-img {
+  max-width: 300px;
+}
 }
 
 @media screen and (max-width: 400px){
@@ -1198,6 +1221,17 @@ section.work-list {
 
   .project-title h1 {
     font-size: 2rem;
+  }
+
+  .about-text{
+    width: 250px;
+  }
+  .about-text h1 {
+    font-size: 2rem;
+  }
+
+  .about-img {
+    width: 250px;
   }
 
 }
